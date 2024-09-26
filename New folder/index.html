@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- end -->
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- end -->
+    <!-- custom css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: "Ubuntu", sans-serif; */
+    scroll-behavior: smooth;
+}
+   
+
+:root{
+   --bg-color:#091420;
+   --bg-dark:#0c1a28;
+   --primary:#4fe98c;
+   --img-width:200px;
+}
+.bg-color{
+    background: var(--bg-color);
+}
+
+   
+.primay{
+    color: var(--primary);
+}
+.navi:hover{
+    /* color: var(--primary); */
+    background: var(--primary);
+    color:#091420;
+}
+.ubanto{
+    font-family:"Ubuntu", sans-serif; 
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+.bgc-dark{
+    background: var(--bg-dark);
+}
+.go{
+    transition: all 0.5s ease;
+    background: #081c1550;
+    backdrop-filter: blur(10px);
+}
+.go:hover{
+    background: #081c15;
+    color: var(--bg-dark);
+}
+.im{
+    width: var(--img-width);
+}
+.primay-bg{
+    background: var(--primary);
+    transition: all 0.5s ease;
+}
+.primay-bg:hover{
+    background: #bc6c25;
+}
+.cl{
+    border: 2px solid rgb(63 63 70);
+    color: #4fe98c;
+}
+#mainManu ul li.active a{
+    background: var(--primary);
+    color:#091420;
+}
+#social{
+    width: 50%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.so{
+    font-size: 28px;
+    transition: all 0.5s ease;
+    color: #4fe98c;
+}
+.so:hover{
+    
+    transform: scale(1.4);
+
+}
+footer{
+    background:linear-gradient(to right , var(--bg-color),#1f363d);
+}
+
+    </style>
+    <!-- end -->
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- end -->
+    <title>Document</title>
+</head>
+
+<body class=" relative bg-color fontF">
+    <!-- header area -->
+    <header class="w-full fixed left-0 bottom-0 md:top-0 h-14 bg-gradient-to-r from-indigo-500 to-emerald-500"
+        id="header">
+        <nav id="mainManu">
+            <ul class="text-center">
+                <li class=" inline-block"><a class="block navi px-4 py-4 text-white md:px-10  ubanto transition-all "
+                        href="#home"><i class='bx bxs-home pr-0 md:pr-3'></i><span
+                            class="hidden md:inline-block">Home</span></a></li>
+                <li class=" inline-block"><a class="block navi px-4 py-4 text-white md:px-10  ubanto transition-all "
+                        href="#about"><i class='bx bxs-user pr-0 md:pr-3'></i><span
+                            class="hidden md:inline-block">About</span></a></li>
+                <li class=" inline-block"><a class="block navi px-4 py-4 text-white md:px-10  ubanto transition-all "
+                        href="#service"><i class='bx bxs-cog pr-0 md:pr-3'></i><span
+                            class="hidden md:inline-block">Service</span></a></li>
+                <li class=" inline-block"><a class="block navi px-4 py-4 text-white md:px-10  ubanto transition-all "
+                        href="#contact"><i class='bx bxs-envelope pr-0 md:pr-3'></i><span
+                            class="hidden md:inline-block">Contacts</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END -->
+   <main>
+     <!-- home area -->
+     <section id="home" class="h-screen flex justify-center items-center">
+        <div class="w-3/4">
+            <div class="bgc-dark p-10 rounded-2xl border-zinc-700">
+                <img src="home.svg" alt="" class="im mb-5">
+                <h5 class="text-lg primay uppercase">Platform Busness Growth</h5>
+                <h3 class=" md:text-3xl text-white  mb-5">Get your online busness Goals In order</h3>
+                <a href="" class="primay-bg font-semibold hover: inline-block px-10 py-3 rounded">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- END -->
+    <!-- about area -->
+    <section id="about" class="h-screen flex justify-center items-center">
+        <div class="w-3/4">
+            <div class="bgc-dark p-10 rounded-2xl border-zinc-700">
+                <img src="about.svg" alt="" class="im mb-5">
+                <h5 class="text-lg primay uppercase">Who We Are?</h5>
+                <h3 class=" md:text-3xl text-white  mb-5">Our Team Consist of practitioners Who Have Years of experience
+                    in launch</h3>
+                <p class="text-white hidden md:block ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    corrupti sed ducimus id repellat quasi autem odio beatae necessitatibus sapiente aut eius laudantium
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!--END-->
+    <!-- Service area -->
+    <section id="service" class="h-screen flex justify-center items-center">
+        <div class="w-3/4">
+            <div class="bgc-dark p-10 rounded-2xl border-zinc-700">
+                <img src="service.svg" alt="" class="im mb-5">
+                <h5 class="text-lg primay uppercase">Our Specialize</h5>
+                <h3 class=" md:text-3xl text-white  mb-5">WHAT WE OFFER</h3>
+                <div class="flex justify-between mt-4 flex-wrap">
+                    <div class="bgc-dark border-green-900 border-2 px-3 py-2 rounded-lg mr-1 w-[100%] md:w-[24%] mb-3 go">
+                        <i class='bx bxl-figma primay text-3xl mb-3'></i>
+                        <h4 class="text-white text-sm md:text-2xl font-semibold mb-3">UI/UX Design</h4>
+                        <p class="text-white hidden md:block ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Sit, harum.</p>
+                    </div>
+
+
+                    <div class="bgc-dark border-green-900 border-2 px-3 py-2 rounded-lg mr-1 w-[100%] md:w-[24%] mb-3 go">
+                        <i class='bx bxl-react primay text-3xl mb-3'></i>
+                        <h4 class="text-white text-sm md:text-2xl font-semibold mb-3">REACT</h4>
+                        <p class="text-white hidden md:block ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Sit, harum.</p>
+                    </div>
+
+
+                    <div class="bgc-dark border-green-900 border-2 px-3 py-2 rounded-lg mr-1 w-[100%] md:w-[24%] mb-3 go">
+                        <i class='bx bxl-mongodb primay text-3xl mb-3'></i>
+                        <h4 class="text-white text-sm md:text-2xl font-semibold mb-3">MONGODB</h4>
+                        <p class="text-white hidden md:block ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Sit, harum.</p>
+                    </div>
+
+
+                    <div class="bgc-dark border-green-900 border-2 px-3 py-2 rounded-lg mr-1 w-[100%] md:w-[24%] mb-3 go">
+                        <i class='bx bxl-javascript primay text-3xl mb-3'></i>
+                        <h4 class="text-white text-sm md:text-2xl font-semibold mb-3">JAVA SCRIPT</h4>
+                        <p class="text-white hidden md:block ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Sit, harum.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- END -->
+    <!-- contact area -->
+    <section id="contact" class="h-screen  flex justify-center items-center">
+        <div class="w-3/4">
+            <div class="bgc-dark p-10 rounded-2xl border-zinc-700">
+                <img src="contact.svg" alt="" class="im mb-5">
+                <h5 class="text-lg primay uppercase">let's chat</h5>
+                <h3 class=" md:text-3xl text-white  mb-5">SEND A MESSAGE</h3>
+                <form action="#">
+                    <div class="flex">
+                        <input type="text" placeholder="Enter Your Name"
+                            class="bg-color cl rounded-lg px-3 py-2 w-[47%] md:w-[48%] mb-3 mr-2">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="bg-color cl rounded-lg px-3 py-2 w-[47%] md:w-[48%] mb-3 mr-2">
+                    </div>
+                    <textarea name="" id="" placeholder="YOUR MESSAGE"
+                        class="bg-color cl rounded-lg px-3 py-2 w-[98%] h-[100px] md:w-[97%] mb-3 mr-2"></textarea>
+                    <input type="submit" value="SEND MESSAGE"
+                        class="primay-bg font-semibold hover: inline-block px-10 py-3 rounded">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- END -->
+</main>
+  <footer  class="w-full flex justify-center items-center h-24 ">
+    <section id="social">
+            <a href="facebook"><i class='bx so bxl-facebook' ></i></a>
+            <a href="facebook"><i class='bx so bxl-whatsapp' ></i></a>
+            <a href="facebook"><i class='bx so bxl-gmail' ></i></a>
+            <a href="facebook"><i class='bx so bxl-github' ></i></a>
+            <a href="facebook"><i class='bx so bxl-linkedin-square' ></i></i></a>
+    </section>
+  </footer>
+   
+    <script>
+        const links = document.querySelectorAll('#mainManu ul li a');
+
+        links.forEach(link => {
+            link.addEventListener('click',function () {
+                links.forEach(link => {
+                    link.parentElement.classList.remove('active');
+                })
+                this.parentElement.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
